@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="signup-container">
+    <h1>Sign Up</h1>
+    <form action="/submit-signup" method="post">
+        <div class="name-container">
+            <div class="input-container">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            </div>
+            <div class="input-container">
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <input type="text" id="mobile-no" name="mobile-no" placeholder="Mobile No." required>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+        <div class="password-container">
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            </div>
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree</label>
+            <span>By clicking on <span class="register-text">Register</span>, you agree to the <a href="#">Terms and Conditions</a> set out by this site, including our Cookie Use.</span>
+        </div>
+
+        <div class="button-container">
+            <input type="submit" value="Register" class="register-button">
+            <input type="button" value="Sign In" class="signin-button">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

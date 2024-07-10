@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 2rem; 
+    max-width: 40rem; 
+    text-align: center;
+    box-sizing: border-box; 
+    border-radius: 0.3125rem; 
+    margin: 2rem; 
+}
+
+.signup-container h1 {
+    margin-bottom: 1.25rem; 
+    font-size: 1.5rem; 
+    font-weight: normal; 
+}
+
+.signup-container label {
+    display: block;
+    margin-bottom: 0.625rem; 
+    text-align: left;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 0.625rem; 
+    margin-bottom: 0.75rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.1875rem; 
+    box-sizing: border-box; 
+    opacity: 0.8; 
+}
+
+.signup-container .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem; 
+}
+
+.signup-container .register-button,
+.signup-container .signin-button {
+    flex: 1; 
+    padding: 0.75rem; 
+    border: none;
+    border-radius: 0.1875rem; 
+    color: #fff;
+    font-size: 1rem; 
+    cursor: pointer;
+    margin-right: 0.75rem; 
+}
+
+.signup-container .register-button {
+    background-color: #007bff; 
+}
+
+.signup-container .register-button:hover {
+    background-color: #0056b3; 
+}
+
+.signup-container .register-text{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.1rem;
+    border-radius: 0.05rem;
+    margin-left: 0rem;
+}
+
+.signup-container .signin-button {
+    background-color: #28a745; 
+}
+
+.signup-container .signin-button:hover {
+    background-color: #218838; 
+}
+
+.name-container,
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.name-container .input-container,
+.password-container .input-container {
+    width: calc(50% - 0.3125rem); 
+    margin-bottom: 0.75rem; 
+}
+.checkbox-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 1.25rem; 
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 0.5rem; 
+}
+
+.checkbox-container span {
+    font-size: 0.875rem; 
+    color: #555;
+    text-align: left; 
+    margin-left: 2.75rem; 
+}
+
+.checkbox-container label {
+    margin-left: 0.25rem; 
+    margin-top: 0.45rem;
+    white-space: nowrap;
+
+}
+
+@media (max-width: 37.5rem) { 
+    .signup-container {
+        padding: 1rem; 
+    }
+
+    .signup-container h1 {
+        font-size: 1.25rem; 
+    }
+
+    .signup-container .button-container {
+        flex-direction: column; 
+    }
+
+    .signup-container .register-button,
+    .signup-container .signin-button {
+        width: 100%; 
+        margin-top: 0.75rem; 
+        margin-right: 0; 
+    }
+
+    .name-container .input-container,
+    .password-container .input-container {
+        width: 100%; 
+        margin-bottom: 0.75rem; 
+    }
+}
